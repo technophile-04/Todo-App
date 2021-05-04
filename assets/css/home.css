@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,4 +6,48 @@
 
 body{
     background-color: #E3E9FF;
+    font-family: 'Itim', cursive;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    max-width: 526px;
+}
+
+.title{
+    margin: 12rem 0 1.25rem;
+    background-color: #AF7EEA;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0.35rem 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.todo-list{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.list{
+    padding: 0.75rem;
+    font-size: 1.35rem;
+    border: 1px solid red;
+    margin-bottom: 1rem;
+    color: #aeb5ca;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list a{
+    font-size: 1.25rem;
+    color: #aeb5ca;
 }

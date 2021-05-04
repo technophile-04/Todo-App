@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/home.css">
     <title><%= title %></title>
 </head>
 <body>
-    <h1><%= title %></h1>
+    <div class="container">
+        <div class="title">
+            <h1><%= title %></h1>
+        </div>
+        <div class="todo-list">
+            <ul>
+                <% for (let todo of todo_list ){ %>
+                 <li class="list">
+                    <p> <%= todo.name %> </p>
+                    <a href="/delete-todo/?id=<%= todo._id %>">
+                        <i class="fas fa-trash-alt"></i>
+                    </a>
+                 </li>
+                <% } %>
+            </ul>
+        </div>
+        <form action="/create-todo" method="POST">
+            <input type="text" name="name" placeholder="todo item">
+            <button>Add</button>
+        </form>
+    </div>
 </body>
 </html>

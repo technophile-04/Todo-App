@@ -11,7 +11,6 @@ app.set('views', './views');
 
 app.use('/', mainRouter);
 
-
 app.listen(port, (err) => {
     if (err) {
         console.log('Error in runnig the server');
