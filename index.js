@@ -3,6 +3,8 @@ const port = 3000;
 const app = express();
 const mainRouter = require('./routes');
 
+app.use(express.static('./assets'));
+
 // setting up view engine
 app.set('view engine', 'ejs');
 app.set('views', './views');
