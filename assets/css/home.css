@@ -48,9 +48,14 @@ ul{
     justify-content: space-between;
 }
 
+.todo-name{
+    flex-grow: 1;
+}
+
 .list a{
     font-size: 1.25rem;
     color: #aeb5ca;
+    margin: 0 0.75rem 0 1.25rem;
 }
 
 input, button{
@@ -83,4 +88,17 @@ button{
     padding: 0.25em 1.25em;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.check{
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.check:hover{
+    transform: rotate(360deg);
+}
+
+.checked{
+    text-decoration: line-through;
 }

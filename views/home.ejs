@@ -17,7 +17,8 @@
             <ul>
                 <% for (let todo of todo_list ){ %>
                  <li class="list">
-                    <p> <%= todo.name %> </p>
+                    <p class="todo-name"> <%= todo.name %> </p>
+                    <span class="check"><i class="fa fa-check"></i></span>
                     <a href="/delete-todo/?id=<%= todo._id %>">
                         <i class="fas fa-trash-alt"></i>
                     </a>
@@ -30,5 +31,6 @@
             <button>Add</button>
         </form>
     </div>
+    <script src="/js/index.js"></script>
 </body>
 </html>
