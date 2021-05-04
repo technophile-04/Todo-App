@@ -18,7 +18,7 @@ body{
 }
 
 .title{
-    margin: 12rem 0 1.25rem;
+    margin: 9rem 0 1.55rem;
     background-color: #AF7EEA;
     width: 100%;
     text-align: center;
@@ -34,13 +34,14 @@ ul{
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1.75rem;
     
 }
 
 .list{
     padding: 0.75rem;
     font-size: 1.35rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 1rem;
     color: #aeb5ca;
     display: flex;
@@ -50,4 +51,36 @@ ul{
 .list a{
     font-size: 1.25rem;
     color: #aeb5ca;
+}
+
+input, button{
+    margin-bottom: 1rem;
+    width: 100%;
+    display: block;
+}
+
+input{
+    outline: none;
+    border-width: 0 0 2px;
+    border-color: #AF7EEA;
+    color: #aeb5ca;
+    font-size: 1.25rem;
+    padding: 0.25em 0 0.25em 0.25em;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+}
+
+button{
+    background-color: #AF7EEA;
+    color: white;
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    padding: 0.25em 1.25em;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
